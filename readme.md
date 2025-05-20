@@ -91,7 +91,7 @@ http://localhost:3000/admin
 │   |── components/   # Komponen (navbar, form, dll.)
 │   
 ├── routes/           # Route utama
-│         
+├── config/           # Konfigurasi       
 ├── app.js            # Entry point aplikasi
 └── README.md
 ```
