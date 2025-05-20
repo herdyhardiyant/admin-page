@@ -14,9 +14,9 @@ Aplikasi web sederhana berbasis Node.js, Express, EJS, dan MySQL untuk mengelola
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/nama-repo.git
+git clone https://github.com/herdyhardiyant/admin-page
 
-cd nama-repo
+cd admin-page
 ```
 ### 2. Install Dependency
 ```bash
