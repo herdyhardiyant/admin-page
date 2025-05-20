@@ -1,0 +1,10 @@
+ <%- include('components/header') -%>    
+ 
+<h4>Pembelian</h4>
+<%- include('components/purchaseForm') -%>
+<%- include('components/purchaseTable') -%>
+<br/>
+<form action="/purchases/confirm" method="POST" style="display:inline;">
+  <button type="submit">Konfirmasi Pembelian</button>
+</form>
+<%- include('components/footer') -%>    

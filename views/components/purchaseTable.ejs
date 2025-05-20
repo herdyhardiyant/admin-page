@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price (Rp)</th>
+      <th>Quantity</th>
+      <th>Total Price (Rp)</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% purchases.forEach(product => { %>
+      <tr>
+        <td><%= product.id %></td>
+        <td><%= product.product_name %></td>
+        <td><%= product.price %></td>
+        <td><%= product.quantity %></td>
+        <td><%= product.price * product.quantity %></td>
+        <td>
+          <form action="/purchases/<%=product.id%>/delete" method="POST">
+            <button type="submit">Batalkan Pembelian</button>
+          </form>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>

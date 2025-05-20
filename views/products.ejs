@@ -1,0 +1,25 @@
+<%- include('components/header') -%>    
+ 
+<h4>Semua Produk</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price (Rp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% products.forEach(product => { %>
+      <tr>
+        <td><%= product.id %></td>
+        <td><%= product.name %></td>
+        <td><%= product.price %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+
+ <%- include('components/footer') -%>    
